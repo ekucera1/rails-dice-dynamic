@@ -7,5 +7,7 @@ Rails.application.routes.draw do
 
   get("/dice/5/4", { :controller => "zebra", :action => "tiger" })
 
+  get("/dice/:num1/:num2", { :controller => "zebra", :action => "bobcat" })
+
   get("/", { :controller => "zebra", :action => "rules" })
 end
